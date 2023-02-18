@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Validation</title>
+</head>
+<body class="bg-blue-50 flex flex-col items-center justify-center">
+    <h1 class="text-4xl mt-8 mb-8 font-semibold">Simple Validation Form</h1>
+    <div class="form-wrapper bg-white p-8 w-10/12 md:w-6/12 rounded shadow">
+        <form action="" id="form">
+            <div class="form-group flex flex-col mb-5">
+                <label for="text" class="mb-3 text-gray-700">Fullname</label>
+                <input type="text" placeholder="Enter your fullname" class="ring-gray-300 ring-1 py-2 px-4 rounded-md required-fields">
+                <span class="text-xs error-msg mt-1"></span>
+            </div>
+            <div class="form-group flex flex-col mb-5">
+                <label for="email" class="mb-3 text-gray-700">Email Address</label>
+                <input type="email" placeholder="Enter your email" class="ring-gray-300 ring-1 py-2 px-4 rounded-md required-fields email-input">
+                <span class="text-xs error-msg mt-2"></span>
+                <span class="text-xs success-msg mt-1"></span>
+            </div>
+            <div class="form-group flex flex-col mb-5">
+                <label for="password" class="mb-3 text-gray-700 ">Password</label>
+                <input type="password" placeholder="Enter your password" class="ring-gray-300 ring-1 py-2 px-4 rounded-md required-fields has-password">
+                <span class="text-xs error-msg mt-1"></span>
+                <span class="text-xs success-msg mt-1"></span>
+            </div>
+            <div class="form-group flex flex-col mb-5">
+                <label for="password" class="mb-3 text-gray-700">Confirm Password</label>
+                <input type="password" placeholder="Confirm your password" class="ring-gray-300 ring-1 py-2 px-4 rounded-md required-fields confirmed-pass">
+                <span class="text-xs error-msg mt-1"></span>
+                <span class="text-xs success-msg mt-1"></span>
+            </div>
+
+            <button class="bg-emerald-600 hover:bg-emerald-700 py-4 px-6 rounded-md uppercase font-semibold text-white w-full" id="register_btn" type="button">Sign me up</button>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
